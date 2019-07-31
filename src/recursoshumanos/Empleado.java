@@ -44,8 +44,17 @@ public class Empleado extends Persona{
     public String toString() {
         return "Empleado{" + "numEmp=" + numEmp + ", puesto=" + puesto + ", sueldo=" + sueldo + '}';
     }
+
+    @Override
+    public void imprimeDatos() {
+        System.out.println("datos" + getNombre()); 
+    }
     
-    
-    
-    
+    public void aumentarSueldo(double aumento) throws AumentaSueldoException{ 
+        if (aumento > 0) {
+            this.setSueldo(aumento);
+        } else {
+            throw new AumentaSueldoException("Ha ocurrido una excepción");
+        }
+    }
 }

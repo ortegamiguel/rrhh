@@ -14,8 +14,9 @@ public class Principal{
     /**
      * @param args the command line arguments
      */
+    private static int[] x; 
     public static void main(String[] args) {
-        Persona p1 = new Persona();
+        /*Persona p1 = new Persona();
         Persona p2 = new Persona();
         Persona p3 = new Persona("zxczx","fcsd",4536);
         
@@ -31,8 +32,23 @@ public class Principal{
         
         System.out.println("P1 -->" + p1.getNombre() + " " + p1.getDomicilio() + " " + p1.getEdad());
         System.out.println("P2 -->" + p2.getNombre() + " " + p2.getDomicilio() + " " + p2.getEdad());
-        System.out.println("P3 -->" + p3.getNombre() + " " + p3.getDomicilio() + " " + p3.getEdad());
+        System.out.println("P3 -->" + p3.getNombre() + " " + p3.getDomicilio() + " " + p3.getEdad());*/
+        
+        /*Empleado emp1 = new Empleado("holsa");
+        emp1.setEdad(23);
+        //emp1.imprimeDatos();
+        
+        Persona p2 = new Empleado("Miguel");
+        p2.setEdad(22);
+        //System.out.println(p2.compareTo(emp1));
+        
+        try {
+            emp1.aumentarSueldo(0);
+        } catch (AumentaSueldoException e) {
+            System.out.println(e.getMessage());
+        }*/
         
 
+        System.out.println(x[0]); 
     }
 }

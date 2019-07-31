@@ -9,7 +9,7 @@ package recursoshumanos;
  *
  * @author Java Martes
  */
-public class Persona {
+public abstract class Persona implements Comparable{
 
     private String nombre;
     private String domicilio;
@@ -51,11 +51,21 @@ public class Persona {
         this.edad = edad;
     }
     
-    public static void imprimeDatos(){
-        System.out.println("Los datos de la persona\n");
-    }
+    public abstract void imprimeDatos();
     
     public static void imprimeDatos(String titulo){
     
+    }
+    
+    @Override
+    public int compareTo(Object t) {
+        Persona emp = (Persona) t;
+        if (this.getEdad() == emp.getEdad()) {
+            return 0;
+        } else if (this.getEdad() > emp.getEdad()) {
+            return 1;
+        }else {
+            return -1;
+        }
     }
 }
